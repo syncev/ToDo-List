@@ -1,40 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo App</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="container mt-3">
-        <div class="row">
-            <div class="col justify-content-center border border-dark">
+      <div class="row">
+        <div class="col justify-content-center border border-dark">
+          <header>
+            <h1>TODO APP</h1>
+          </header>
 
-                <header>
-                    <h1>TODO APP</h1>
-                </header>
-                
-                <main>
-                    <div class="search row mx-1">
-                        <input type="text" name="" id="inputBar" placeholder="Ingrese tarea">
-                    </div>
-                    <div class="row mt-3 mx-1 ">
-                        <button type="button" class=" btn btn-primary" id="inputBtn" >Agregar</button>
-                    </div>
-                </main>
-                <hr class="hr">
-
-                <section >
-                    <ul class="container" id="ul">
-                       
-                        
-                    </ul>
-                </section>
+          <main>
+            <div class="search row mx-1">
+              <input
+                type="text"
+                name=""
+                id="inputBar"
+                placeholder="Add a task"
+              />
             </div>
+            <div class="row mt-3 mx-1">
+              <button type="button" class="btn btn-primary" id="inputBtn">
+                Agregar
+              </button>
+            </div>
+          </main>
+          <hr class="hr" />
+
+          <section id="listContainer">
+            <ul class="container" id="todoTaskList">
+              <li class="row mb-3 py-3">
+                <span class="col">This is an example, add your own :D</span>
+                <div class="col-1 gx-0">
+                  <img
+                    type="button"
+                    id="btnComplete"
+                    class="check-img img-btn"
+                    src="Assets/circle-check-solid.svg"
+                  />
+                </div>
+                <div class="col-1 gx-0">
+                  <img
+                    type="button"
+                    id="btnRemove"
+                    class="minus-img img-btn"
+                    src="Assets/circle-minus-solid.svg"
+                  />
+                </div>
+              </li>
+            </ul>
+            <ul class="container" id="doneList">
+              <li class="row mb-3 py-3">
+                <span class="col">This is an done tas :D</span>
+                <div class="col-1 gx-0">
+                  <img
+                    type="button"
+                    id="btnComplete"
+                    class="check-img img-btn"
+                    src="Assets/rotate-left-solid.svg"
+                  />
+                </div>
+                <div class="col-1 gx-0">
+                  <img
+                    type="button"
+                    id="btnRemove"
+                    class="minus-img img-btn"
+                    src="Assets/circle-minus-solid.svg"
+                  />
+                </div>
+              </li>
+             
+              
+            </ul>
+          </section>
         </div>
+      </div>
     </div>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

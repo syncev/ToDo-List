@@ -2,9 +2,12 @@
  
  li{
     list-style: none;
-    background-color: peachpuff
+    background-color: rgb(255, 186, 126)
  }
  .img-btn{
     width: 25px;
-    
  }
+#doneList > li{
+   background-color: rgb(196, 193, 193);
+   text-decoration: line-through
+}
